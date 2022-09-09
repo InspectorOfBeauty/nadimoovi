@@ -1,0 +1,340 @@
+.welcome__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.welcome__background img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.welcome__column {
+  position: relative;
+  z-index: 10;
+
+  min-height: 100vh;
+  background-size: 100%;
+  //border: 1px solid gray;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
+.welcome__container {
+  transform: translateY(-50px);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  //border: 1px solid gray;
+  max-width: 1180px;
+
+}
+
+.welcome__roles {
+  font-family: "Bad Script";
+  color: #3b3b3b;
+  font-style: italic;
+  font-size: 40px;
+  font-weight: 200;
+  
+  @media (max-width: 992px) {
+    font-size: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    
+  }
+
+  @media (max-width: 540px) {
+    font-size: 25px;
+    word-spacing: 8px;
+  }
+
+  @media (max-width: 414px) {
+    display: none;
+    /*font-size: 18px;
+    word-spacing: 8px;*/
+  }
+
+  @media (max-width: 360px) {
+    font-size: 18px;
+    word-spacing: 8px;
+  }
+}
+
+.welcome__name {
+  font-family: 'Comforter Brush';
+  letter-spacing: 5px;
+  word-spacing: 20px;
+  font-size: 120px;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+
+  @media (max-width: 992px) {
+    font-size: 90px;
+    letter-spacing: 4px;
+    word-spacing: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 80px;
+    letter-spacing: 2px;
+    word-spacing: 15px;
+  }
+
+  @media (max-width: 540px) {
+    font-size: 65px;
+    word-spacing: 8px;
+  }
+
+  @media (max-width: 414px) {
+    display: none;
+    /*font-size: 40px;
+    letter-spacing: 1px;
+    word-spacing: 8px;*/
+  }
+
+  @media (max-width: 360px) {
+    font-size: 40px;
+    //letter-spacing: 1px;
+    word-spacing: 8px;
+  }
+
+}
+
+
+.btn_welcome {
+  position: relative;  //Для анимации кнопки при клике.
+  top:0; //Для анимации кнопки при клике.
+  z-index: 500;
+  background-color: transparent;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #5e5e5e;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 5px;
+  border: 1px solid #5e5e5e;
+  border-radius: 30px 30px;
+  align-self: center;
+
+  @media (max-width: 992px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 768px) {
+    letter-spacing: 4px;
+    font-size: 15px;
+    padding: 8px 20px;
+  }
+
+  @media (max-width: 540px) {
+    letter-spacing: 3px;
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 10px;
+    padding: 5px 20px;
+    letter-spacing: 3px;
+  }
+}
+
+.btn_welcome:active {
+  background-color: #212121;
+  transition: background-color 1s;
+  top: 5px;
+}
+
+.btn_welcome:hover {
+  background-color: #626262;
+  color: white;
+  border: 1px solid transparent;
+  transition: background-color 0.3s;
+  //box-shadow: 0 2px rgba(100, 100, 100, 0.2);
+}
+
+.text-focus-in-name {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.text-focus-in-roles {
+  -webkit-animation: text-focus-in-roles 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in-roles 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in-roles {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in-roles {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+.text-focus-in-logo {
+  -webkit-animation: text-focus-in-roles 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in-roles 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in-logo {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 0.8;
+  }
+}
+@keyframes text-focus-in-roles {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 0.8;
+  }
+}
+
+
+.kenburns-top {
+  -webkit-animation: kenburns-top 7s ease-out both;
+  animation: kenburns-top 7s ease-out both;
+}
+
+@-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+    filter: blur(1px);
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.4) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    filter: blur(0px);
+  }
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+    filter: blur(1px);
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.4) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    filter: blur(0px);
+  }
+}
+
+.logo-mob {
+  width: 310px;
+  display: none;
+  transform: rotate(5deg);
+  
+  @media (max-width: 414px) {
+    display: block;
+    opacity: 0.8;
+    position: relative;
+    top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

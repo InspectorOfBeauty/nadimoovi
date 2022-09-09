@@ -1,0 +1,88 @@
+.background-music {
+  opacity: 50%;
+  text-align: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  //background-color: white;
+  z-index: 100;
+  border-radius: 50%;
+  border: 2px solid #363636;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+
+
+.btn_music {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  audio {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.btn_music:after{
+  color: #363636;
+  font-size: 25px;
+  cursor: pointer;
+
+  content: "\f6a9";
+  font-family: FontAwesome;
+}
+
+
+.btn_music_active:after {
+  color: #363636;
+  font-size: 25px;
+  cursor: pointer;
+
+  content: '\f028';
+  font-family: FontAwesome;
+}
+
+.pulsate-fwd {
+  -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+  animation: pulsate-fwd 1s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+
+

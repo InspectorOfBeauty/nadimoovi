@@ -1,0 +1,145 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%; //<= Особое внимание этому параметру*!
+  font-family: "Manrope";
+  color: black;
+  font-size: 15px;
+}
+
+.wrapper {  //Основной враппер, который использовался для обворачивания хеддера, мэйна и футтера.
+  min-height: 100%; //Оболочка на всю высоту экрана ОБЯЗАТЕЛЬНО.
+  overflow: hidden; //Чтобы ничего за экран не вылезло.
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto; //Расстянет контентную часть на весь экран: чтобы футер прилип к низу при недостатке контента.
+}
+
+.container {
+  position: relative;
+  z-index: 100;
+
+  //border: 1px solid gray;
+  max-width: 1180px;
+  margin: 0 auto;
+
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  margin-bottom: -1120px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  color: #919191;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+
+  @media (max-width: 540px) {
+    font-size: 25px;
+  }
+
+  @media (max-width: 414px) {
+    font-size: 25px;
+  }
+}
+
+.btn {
+  font-style: normal;
+  display: inline-block;
+  //padding: 10px 20px;
+  color: #5d5d5d;
+  font-size: 19px;
+  border-radius: 30px 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.title__container {
+  text-align: center;
+  //border: 1px solid gray;
+  width: 500px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  
+  @media (max-width: 540px) {
+    margin-bottom: 45px;
+    width: 400px;
+  }
+
+  @media (max-width: 414px) {
+    margin-bottom: 40px;
+    width: 350px;
+  }
+
+  @media (max-width: 360px) {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+}
+
+
+.title__container span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.title__container:before,
+.title__container:after {
+  /* Обязательно указываем пустое свойство content,
+  ** иначе псевдоэлементы не появятся на сайте */
+  content: "";
+  /* Указываем что наши линии будут строчно-блочные и
+  ** выравнивание по высоте - по центру */
+  display: inline-block;
+  vertical-align: middle;
+  /* Задаем ширину 100% и выбираем высоту линии,
+  ** в нашем примере она равна 4 пикселям */
+  width: 100%;
+  height: 2px;
+  /* Добавляем цвет для линии */
+  background-color: #c5c5c5;
+  /* Добавляем пседоэлемантам возможность изменить
+  ** позицию линии, для создания отступов от текста */
+  position: relative;
+}
+
+.title__container:before {
+  /* Смещаем левую линию на 100% влево, чтобы линия
+  ** встала рядом с текстом слева */
+  margin-left: -100%;
+  /* Указываем в пикселях отступ линии от текста заголовка */
+  left: -14px;
+}
+.title__container:after {
+  /* Смещаем правую линию на 100% вправо, чтобы
+  ** линия встала рядом с текстом справа */
+  margin-right: -100%;
+  /* Указываем в пикселях отступ линии от текста заголовка */
+  right: -14px;
+}
+
+
+
+

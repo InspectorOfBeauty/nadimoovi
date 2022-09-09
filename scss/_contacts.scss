@@ -1,0 +1,246 @@
+.contacts__container {
+  //border: 1px solid gray;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 50px 0 70px;
+
+  font-size: 18px;
+}
+
+.contacts__column {
+  //border: 1px solid gray;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form__column {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+//===================================
+
+.form__body {
+  position: relative;
+  //border: 1px solid gray;
+  max-width: 550px;
+  margin: 0 auto;
+  paddin: 20px
+}
+
+.form__body::after {
+  content: '';
+  //Делаем покрывало сверху для всей формы,
+  // чтобы пользователь не мог тыкать по полям:
+  position: absolute;
+  //z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(134, 134, 134, 0) url("../media/imges/contacts/sending.gif") center / 50px no-repeat ;
+  //Но изначально должно быть, до получения класса _sending:
+  opacity: 0;
+  visibility: hidden;
+  //Немного анимации:
+  transition: all 0.3s ease 0s;
+}
+
+//А когда получаем этот класс, убираем opacity и fisibility:
+.form__body._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+//===================================
+
+.form__title {
+  text-align: center;
+  //font-family: "Bad Script";
+  font-size: 28px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  //word-spacing: -4px;
+  margin-bottom: 40px;
+  color: #545454;
+
+  @media (max-width: 414px) {
+    font-size: 23px;
+  }
+}
+
+.form__item {
+  margin-bottom: 20px;
+}
+
+.form__label1 {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.form__label2 {
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: #696969;
+}
+
+
+.form__input {
+  background-color: transparent;
+  font-size: 18px;
+  border-bottom: 1px solid black;
+  height: 40px;
+  width: 100%;
+}
+
+.form__label1 {
+  margin-bottom: 10px;
+}
+
+.form__select {
+  background-color: transparent;
+  font-size: 18px;
+  width: 100%;
+  height: 40px;
+}
+
+textarea.form__input {
+  min-height: 100px;
+  resize: vertical; // Ограничивает растягивание поля, увеличить темерь можно только по высоте.
+  margin-bottom: 50px;
+}
+
+textarea.form__input::placeholder {
+  font-weight: 500;
+  color: #c5c5c5;
+}
+
+.form__button {
+  letter-spacing: 2px;
+  width: 100%;
+  color: gray;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #656565;
+}
+
+.form__button:active {
+  background-color: #212121;
+  transition: background-color 1s;
+  top: 5px;
+}
+
+.form__button:hover {
+  background-color: #626262;
+  color: white;
+  transition: background-color 0.3s;
+  //box-shadow: 0 2px #282828;
+}
+
+.contacts option {
+  font-size: 18px;
+}
+
+//===================================
+
+.contacts input:focus {
+  outline: none;
+  //box-shadow: 0 5px rgba(93, 93, 93, 0.2);
+}
+
+.contacts textarea {
+  outline: none;
+}
+
+.contacts select {
+  outline: none;
+}
+
+.form__input._error {
+  box-shadow: 0px 3px rgba(255, 0, 0, 0.5);
+}
+
+//===================================
+
+.btn-up::after {
+  content: "\f176";
+  font-family: FontAwesome;
+  font-size: 30px;
+  color: white;
+}
+
+.btn-up {
+  background-color: #5e5e5e;
+  padding: 15px 22px;
+  border-radius: 50%;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 100px;
+}
+
+.btn-up:hover {
+  background-color: #4d4d4d;
+}
+
+.btn-up:active {
+  transition: background-color 0.3s;
+  top: 5px;
+}
+
+
+.pulsate-fwd {
+  -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+  animation: pulsate-fwd 1s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.form__title_br {
+  display: none;
+
+  @media (max-width: 414px) {
+    display: block;
+  }
+}
+

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!--Кодировка страницы-->
+    <meta charset="UTF-8">
+    <!--Адаптив-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 viewport-fit=cover">
+    <!--initial-scale=1.0 - начальный масштаб сайта, maximum-scale=1.0 - запрет на увеличение масштаба -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Подключение CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Подключение fontawesome-->
+    <script src="https://kit.fontawesome.com/c3452850c7.js" crossorigin="anonymous"></script>
+    <!--Заголовок страницы в браузере-->
+    <title>Nadimoovi</title>
+    <meta name="description" content="Сайт-портфолио прекрасного видеографа Надежды.">
+    <meta name="keywords" content="видео, видео-съемка, фото, фото-съемка, почасовая видео-съемка">
+    <meta name="Author" content="Надежда Андреева">
+    <meta name="Copyright" content="Надежда Андреева">
+
+
+</head>
+
+<body>
+<!--Оболочка-->
+<div class="wrapper">
+    <!--Задается min-height: 100%; overflow: hidden; display: flex; flex-direction: column, чтобы header, content и footer выстроились в колонку;-->
+    <div class="background-music pulsate-fwd">
+        <div class="btn_music btn_music_active">
+            <audio autoplay loop class="bg-music">
+                <source src="media/audio/peacefulAmbientMorning.mp3" type="audio/ogg"/>
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <header class="header"> <!--Общему блоку внешняя геометрия не задается-->
+        <div class="header__container">  <!--Для ограничения по ширине-->
+            <div class="header__row"> <!--Флекс-котейнер-->
+
+                <a href="index.html" class="header__logo">
+                    <img src="media/imges/header_footer/nadimoovi-logo.png" alt="logo">
+                </a>
+
+                <div class="header__burger-menu">
+                    <div class="menu"></div>
+                    <div class="freeSpace"></div>
+                </div>
+
+                <nav class="header__menu">
+                    <div class="menu__link menu__link_active">Обо мне</div>
+                    <div class="menu__link">Портфолио</div>
+                    <div class="menu__link">Тарифы</div>
+                    <div class="menu__link">Контакты</div>
+                </nav>
+
+                <div class="header__contacts">
+                    <div class="contacts__column">
+                        <a href="mailto:nadimoovi@gmail.com" class="contacts__email">nadimoovi@gmail.com</a>
+                        <a href="tel:+79998887766" class="contacts__phone">+7999-888-77-66</a>
+                        <div class="contacts__social-links">
+                            <div class="social-links__container">
+                                <div class="social-links__row">
+
+                                    <a href="https://vk.com/away.php?to=https%3A%2F%2Finstagram.com%2Fnadimoovi%3Figshid%3DYmMyMTA2M2Y%3D&cc_key="
+                                       class="social-link"></a>
+                                    <a href="https://t.me/nadimoovi" class="social-link"></a>
+                                    <a href="https://vk.com/nadimoov" class="social-link"></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <!--Задается свойство flex: 1 1 auto; чтобы контентную часть сделать на весь экран: чтобы футер прилип к низу при недостатке контента.-->
+
+        <section class="welcome">
+            <div class="welcome__background">
+                <img src="media/imges/welcome/backgroundMain2.png" alt="background" class="kenburns-top">
+            </div>
+            <div class="welcome__column"> <!--Для ограничения контента -->
+                <div class="welcome__container">
+                    <img src="media/imges/header_footer/nadimoovi-logo.png" alt="logo" class="logo-mob text-focus-in-logo">
+                    <h3 class="welcome__roles text-focus-in-roles">Фотограф | Видеограф</h3>
+                    <h1 class="welcome__name text-focus-in-name">Надежда Андреева</h1>
+                    <div class="btn btn_welcome text-focus-in-roles">Портфолио</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-me">
+            <div class="about-me__container">
+                <div class="about-me__column">
+                    <div class="about-me__title">
+                        <div class="title__container">
+                            <span>
+                                <h2>Обо мне</h2>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="about-me__describe">
+                        <div class="describe__container">
+                            <div class="describe__row">
+                                <img src="media/imges/about_me/face.jpg" alt="Nadezhda Andreeva"
+                                     class="describe__photo">
+                                <div class="describe__text">
+                                    <div class="text__column _anim__item _anim-no-hide">
+                                        <p class="_anim-show">
+                                            Привет! <br>
+                                            Меня зовут Надя.
+                                            Профессионально снимаю жизнь и путешествия.
+                                            Создаю контент для отелей и туроператоров.
+                                        </p>
+                                        <div class="btn btn_about-me">Хочу на съемку</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="portfolio__container">
+                <div class="portfolio__column">
+                    <div class="portfolio__title">
+                        <div class="title__container">
+                            <span>
+                                <h2>Портфолио</h2>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="btns__container">
+                        <div class="btns__row">
+                            <div data-filter="all" class="btn btn_filter btn_filter_active">Все</div>
+                            <div data-filter="altay" class="btn btn_filter">Алтай</div>
+                            <div data-filter="love-story" class="btn btn_filter">Love-story</div>
+                            <div data-filter="release" class="btn btn_filter">Выпускные</div>
+                        </div>
+                    </div>
+
+                    <div class="grid__container">
+                        <div class="video-card__item all altay">
+                            <div class="item__video">
+                                <video controls poster="media/imges/posters/ivengo.png">
+                                    <source src="media/video/altay/ivengo.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="item__name">Ivengo</div>
+                        </div>
+
+                        <div class="video-card__item all altay">
+                            <div class="item__video">
+                                <iframe src="https://www.youtube.com/embed/rs2Dz10gyLk"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <div class="item__name">Путешествие в Зимний Алтай. <br>Гейзерное озеро
+                            </div>
+                        </div>
+
+                        <div class="video-card__item all altay">
+                            <div class="item__video">
+                                <iframe src="https://www.youtube.com/embed/_O8fmsSxSsk"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <div class="item__name">Лебединое озеро. <br>Алтайский край. 2021</div>
+                        </div>
+
+                        <div class="video-card__item all love-story">
+                            <div class="item__video">
+                                <iframe src="https://player.vimeo.com/video/341371463?h=a962895c7a&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="item__name">Alex and Chrise</div>
+                        </div>
+
+                        <div class="video-card__item all love-story">
+                            <div class="item__video">
+                                <iframe src="https://player.vimeo.com/video/253092688?h=b250067092&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="item__name">Anton | Alexandra</div>
+                        </div>
+
+                        <div class="video-card__item all love-story">
+                            <div class="item__video">
+                                <iframe src="https://player.vimeo.com/video/198302411?h=a5ebdc5c99&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="item__name">Love. June. France</div>
+                        </div>
+
+                        <div class="video-card__item all release">
+                            <div class="item__video">
+                                <iframe src="https://www.youtube.com/embed/UmBvHhkN52g"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <div class="item__name">Выпускной клип. Гречка - здесь были <br>
+                                (official
+                                music video)
+                            </div>
+                        </div>
+
+                        <div class="video-card__item all release">
+                            <div class="item__video">
+                                <iframe src="https://www.youtube.com/embed/7oTNE1NeevA"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <div class="item__name">Скриптонит - Три на три. 3 x 3 <br> Выпускной
+                                клип
+                                2021
+                            </div>
+                        </div>
+
+                        <div class="video-card__item all release">
+                            <div class="item__video">
+                                <iframe src="https://www.youtube.com/embed/xxZpJruTkpg"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <div class="item__name">Макс Корж - Настоящий (official clip cover) <br>
+                                Выпускной клип 2018
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="more-video__container">
+                        <div class="more-video__title">Больше видео</div>
+                        <div class="more-video__row">
+                            <a href="https://www.youtube.com/channel/UCGaumhjriQWgEaOMDaL3lVQ" class="btn_portfolio_video youtube">youtube</a>
+                            <a href="https://vimeo.com/nadyandreeva?embedded=true&source=owner_portrait&owner=22221443" class="btn_portfolio_video vimeo">vimeo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="price">
+            <div class="price__container">
+                <div class="price__column">
+                    <div class="price__title">
+                        <div class="title__container">
+                            <span>
+                                <h2>Тарифы</h2>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="tariffs">
+                        <div class="tariffs__item">
+                            <div class="item__column">
+                                <div class="item__row">
+                                    <div class="item_describe">
+                                        <div class="describe_column">
+                                            <div class="describe__tariff-name">Почасовая видеосъемка <br class="hour_br">(Full HD
+                                                1080)
+                                            </div>
+                                            <div class="describe__tariff-text">минимум 2 часа</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__dots"></div>
+                                    <div class="item__price">1080 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tariffs__item">
+                            <div class="item__column">
+                                <div class="item__row">
+                                    <div class="item_describe">
+                                        <div class="describe_column">
+                                            <div class="describe__tariff-name">Почасовая видеосъемка <br class="hour_br">(Ultra HD
+                                                4k)
+                                            </div>
+                                            <div class="describe__tariff-text">минимум 2 часа</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__dots"></div>
+                                    <div class="item__price">2500 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tariffs__item">
+                            <div class="item__column">
+                                <div class="item__row">
+                                    <div class="item_describe">
+                                        <div class="describe_column">
+                                            <div class="describe__tariff-name">Фотосъемка</div>
+                                            <div class="describe__tariff-text">минимум 2 часа</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__dots"></div>
+                                    <div class="item__price">2000 руб./час</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tariffs__item">
+                            <div class="item__column">
+                                <div class="item__row">
+                                    <div class="item_describe">
+                                        <div class="describe_column">
+                                            <div class="describe__tariff-name">Съемка с квадракоптера</div>
+                                            <div class="describe__tariff-text">Видео: (Full HD 1080, Ultra HD
+                                                4k) <br class="video-kvad_br">Фото: (JPG, RAW)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__dots"></div>
+                                    <div class="item__price">от 5000 руб.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tariffs__item">
+                            <div class="item__column">
+                                <div class="item__row">
+                                    <div class="item_describe">
+                                        <div class="describe_column">
+                                            <div class="describe__tariff-name">Работа над сценарием</div>
+                                            <div class="describe__tariff-text">Согласно технического задания
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__dots"></div>
+                                    <div class="item__price">от 5000 руб.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tariffs__item">
+                            <div class="item__column">
+                                <div class="item__row">
+                                    <div class="item_describe">
+                                        <div class="describe_column">
+                                            <div class="describe__tariff-name">Монтаж видео</div>
+                                            <div class="describe__tariff-text">Premiere, After effects, Davince
+                                                Resolve
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item__dots"></div>
+                                    <div class="item__price">от 3000 руб.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="contacts__container">
+                <div class="contacts__column">
+                    <div class="contacts__title">
+                        <div class="title__container">
+                        <span>
+                            <h2>Контакты</h2>
+                        </span>
+                        </div>
+                    </div>
+                    <div class="contacts__form">
+                        <div class="form__container">
+                            <div class="form__column">
+                                <!--Форма будет отправляться с помощью JS, actionу назначаем заглушку #, чтобы валидатор не кричал-->
+                                <h3 class="form__title">Оставьте заявку <br class="form__title_br">и я свяжусь с вами</h3>
+                                <form action="#" id="form" class="form__body">
+                                    <div class="form__item">
+                                        <label for="formName" class="form__label1">Имя *</label>
+                                        <!--Сразу ставится звездочка, так как поле будет обязательным.-->
+                                        <input id="formName" type="text" name="name" class="form__input _req"
+                                               placeholder="ИМЯ *"> <!--Связываем лэйбл и инпут с помощью айди.-->
+                                    </div>
+
+                                    <div class="form__item">
+                                        <label for="formEmail" class="form__label1">Email *</label>
+                                        <!--Для безопасности текст обворачиваем в span.-->
+                                        <input id="formEmail" type="text" name="email" class="form__input _req _email"
+                                               placeholder="EMAIL *">
+                                    </div>
+
+                                    <div class="form__item">
+                                        <label for="formPhone" class="form__label1">Телефон *</label>
+                                        <!--Для безопасности текст обворачиваем в span.-->
+                                        <input id="formPhone" type="text" name="phone" class="form__input"
+                                               placeholder="ТЕЛЕФОН">
+                                    </div>
+
+                                    <div class="form__item">
+                                        <div class="form__label2">Тип съемки:</div>
+                                        <select name="tariff" class="form__select">
+                                            <option value="1" selected="selected">Почасовая видеосъемка (Full HD 1080)
+                                            </option>
+                                            <option value="2">Почасовая видеосъемка (Ultra HD 4k)</option>
+                                            <option value="2">Съемка с квадракоптера</option>
+                                            <option value="2">Фотосъемка</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form__item">
+                                        <label for="formMessage" class="form__label1">Сообщение</label>
+                                        <textarea id="formMessage" type="text" name="message" class="form__input"
+                                                  placeholder="СООБЩЕНИЕ"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn form__button">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn btn-up pulsate-fwd"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column">
+                <img src="media/imges/header_footer/nadimoovi-logo.png" alt="logo" class="footer__logo">
+
+                <div class="footer__contacts">
+                    <div class="contacts__column">
+                        <a href="tel:+79998887766" class="contacts__phone">+7999-888-77-66</a>
+                        <a href="mailto:nadimoovi@gmail.com" class="contacts__email">nadimoovi@gmail.com</a>
+                        <div class="contacts__social-links">
+                            <div class="social-links__container">
+                                <div class="social-links__row">
+                                    <a href="https://vk.com/away.php?to=https%3A%2F%2Finstagram.com%2Fnadimoovi%3Figshid%3DYmMyMTA2M2Y%3D&cc_key="
+                                       class="social-link"></a>
+                                    <a href="https://t.me/nadimoovi" class="social-link"></a>
+                                    <a href="https://vk.com/nadimoov" class="social-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="js/audioBtn.js"></script>
+<script src="js/burger-menu.js"></script>
+<script src="js/formProcessing.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/tabFilter.js"></script>
+<script src="js/scrollAnimations.js"></script>
+</body>
+</html>

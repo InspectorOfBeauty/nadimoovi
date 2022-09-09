@@ -1,0 +1,68 @@
+.footer {
+  background-color: #e0e0e0;
+}
+
+.footer__container { //Просто задаем ширину и делаем по центру.
+  max-width: 1180px;
+  margin: 0 auto;
+
+  font-size: 18px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+
+.footer__column { //Конкретно тут высоту и расположение флекс-элементов.
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+footer .contacts__column {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
+  align-items: center; // Выравнивает флекс-блок с соцсетями.
+}
+
+.contacts__phone {
+  position: relative;
+  z-index: 30;
+}
+
+.footer__logo {
+  position: relative;
+  z-index: 10;
+
+  transform: rotate(8deg);
+  width: 290px;
+  filter: opacity(0.7);
+  margin-bottom: -25px;
+}
+
+.footer .social-links__row {
+  margin-top: 5px;
+}
+
+input::placeholder {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+select:optional {
+  color: #5e5e5e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+textarea::placeholder {
+  color: #5e5e5e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+}

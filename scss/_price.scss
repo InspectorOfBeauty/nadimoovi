@@ -1,0 +1,116 @@
+.price {
+  background-color: #f8f8f8;
+}
+
+.price__container {
+  //border: 1px solid gray;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px 70px;
+  font-size: 18px;
+  align-items: center;
+}
+
+.price__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   //Помогает расположить элемент в колонке по центру.
+  width: 100%;
+}
+
+.tariffs {
+  width: 100%;
+}
+
+.tariffs__item {
+  margin-bottom: 30px;
+}
+
+.tariffs__item:last-child {
+  margin-bottom: 0;
+}
+
+.tariffs__column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.item__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.item__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 540px) {
+    flex-direction: column;
+    //align-items: start;
+    text-align: center;
+    //align-items: start;
+  }
+}
+
+.describe_column {
+  display: flex;
+  flex-direction: column;
+}
+
+//===================================
+
+.item__dots {
+  flex: 1 1 auto;
+  border-bottom: 2px dotted gray;
+  margin: 0 20px;
+  
+  @media (max-width: 540px) {
+    display: none;
+  }
+}
+
+.describe__tariff-name, .item__price {
+  letter-spacing: 1px;
+  color: #545454;
+  font-size: 20px;
+  font-weight: 900;
+
+  @media (max-width: 768px) {
+  font-size: 18px;
+}
+  @media (max-width: 414px) {
+    font-size: 18px;
+  }
+}
+
+.describe__tariff-text {
+  letter-spacing: 1px;
+  font-style: italic;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+  @media (max-width: 414px) {
+    font-size: 15px;
+  }
+}
+
+.video-kvad_br {
+  display: none;
+  
+  @media (max-width: 540px) {
+    display: block;
+  }
+}
+
+.hour_br {
+  display: none;
+  @media (max-width: 414px) {
+    display: block;
+  }
+}
+
+

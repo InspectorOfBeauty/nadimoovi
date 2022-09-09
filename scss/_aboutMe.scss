@@ -1,0 +1,156 @@
+.about-me {
+  background-color: #f8f8f8;
+}
+
+.about-me__container {
+  //border: 1px solid gray;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 50px 20px 70px;
+}
+
+.about-me__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.describe__container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.describe__row {
+  //border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 540px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.describe__text {
+  //border: 1px solid gray;
+  width: 40%;
+
+  //border-radius: 0% 50% 50% 0%;
+  border-radius: 0% 30px 30px 0%;
+  color: #3a3a3a;
+  background-color: white;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 500;
+
+  padding: 25px 20px;
+  border-top: 1px solid #5f5f70;
+  border-right: 3px solid #3e3e42;
+  border-bottom: 5px solid #363636;
+  border-left: none;
+
+  @media (max-width: 992px) {
+    width: 50%;
+  }
+
+  @media (max-width: 540px) {
+    width: 120%;
+    border-radius: 10px;
+    border: 0;
+    background-color: transparent;
+    padding: 25px 20px 0;
+
+  }
+}
+
+
+.text__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  opacity: 0;
+  transform: translate(50px, 0);
+  transition: all 0.8s ease 0s;
+
+  @media (max-width: 540px) {
+  }
+}
+
+.text__column {
+  p {
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+}
+
+
+
+.text__column._active {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+.describe__photo {
+  //border: 1px solid gray;
+  object-fit: fill;
+  width: 40%;
+  //border-radius: 50% 0% 0% 50%;
+  border-radius: 30px 0% 0% 30px;
+  filter: grayscale(50%);
+
+  @media (max-width: 992px) {
+    width: 50%;
+  }
+
+  @media (max-width: 540px) {
+    width: 110%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+
+.btn_about-me {
+  position: relative;
+  display: inline;
+  color: #5d5d5d;
+  background-color: #eae6e6;
+  font-size: 16px;
+  border-radius: 30px 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  word-spacing: 1.5px;
+  cursor: pointer;
+  top: 0;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+
+  @media (max-width: 820px) {
+    display: none;
+  }
+
+  @media (max-width: 540px) {
+    margin-top: 40px;
+    display: inline-block;
+  }
+}
+
+
+.btn_about-me:active {
+  background-color: #212121;
+  transition: background-color 1s;
+  top: 5px;
+}
+
+.btn_about-me:hover {
+  background-color: #626262;
+  color: white;
+  transition: background-color 0.3s;
+}
+
